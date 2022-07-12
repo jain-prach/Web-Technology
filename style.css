@@ -1,0 +1,33 @@
+table,tr,td{
+    border: 1px solid chartreuse;
+    font-family: 'Courier New', Courier, monospace;   
+    margin:10px;
+    padding:20px;
+    background-color: black;
+}
+img{
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color:rgb(127, 255, 0);
+}
+span{
+    color:rgba(127, 255, 0.5); 
+}
+.table-row{
+    background-color: black;
+    color:chartreuse;
+}
+.table-row .details{
+    font-size: 10px;
+}
+.actual{
+    font-size: 25px;
+}
+.discounted{
+    font-size: 20px;
+}
