@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: cadetblue;
+}
+form{
+    background-color: black;
+    color: #e635bf;
+    font-family: monospace;
+    padding: 1vw;
+  }
+  
+h1{
+    color: #e635bf;
+    background-color: #000000;
+    width: 100vw;
+    font-family: serif;
+    text-align: center;
+  }
+  

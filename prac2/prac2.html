@@ -1,1 +1,103 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORM</title>
+</head>
+<body>
+    <h1><center>Registration Form</center></h1>
+    <form action="https://httpbin.org/get" method="get"> <!--also has method="post"-->
+          <p>
+              <label for="username">User Name:</label>
+              <input type="text" name="username" id="username" required>
+          </p>
+          <p>
+              <label for="password">Password:</label> 
+              <input type="password" name="password" id="password" required> 
+          </p>
+          <p>
+              <label for="Phone">Phone No:</label> 
+              <input type="tel" name="Phone" id="Phone" placeholder="555-555-5555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autocomplete="on" required> 
+          </p>
+          <p>
+              <label for="year">Year born:</label> 
+              <input type="number" name="year" id="year" min="1950" max="2022" step="10" value="1980"> 
+          </p>        
+          <p>
+              <label for="belief">If you have to describe yourself as one of these what will you choose?</label>
+              <select name="belief" id="belief"> 
+                  <optgroup label="belief">
+                      <option value="Stimulation Believer">Stimulation Believer</option>
+                      <option value="Flat Earther">Flat Earther</option>
+                      <option value="Insane">Insane</option>
+                      <option value="witch">witch</option>
+                      <option value="alien">alien</option>
+                      <option value="atom" selected>atom</option>
+                  </optgroup>
+              </select>
+          </p> <!--This way also allows you to type your own value if it isn't present in the option-->
+          <p>
+              <label for="coffee">Which beverage you prefer on our meeting?</label>
+              <input type="radio" name="coffee" id="regular coffee" value="regular coffee">
+              <label for="regular coffee">Regular Coffee</label>
+              <input type="radio" name="coffee" id="latte" value="latte">
+              <label for="latte">latte</label>
+              <input type="radio" name="coffee" id="Americano" value="Americano">
+              <label for="Americano">Americano</label>
+              <input type="radio" name="coffee" id="Tea" value="Tea">
+              <label for="Tea">Tea</label>
+              <input type="radio" name="coffee" id="Expresso" value="Expresso">
+              <label for="Expresso">Expresso</label>
+              <input type="radio" name="coffee" id="Iced Coffee" value="Iced Coffee">
+              <label for="Iced Coffee">Iced Coffee</label>
+              <input type="radio" name="coffee" id="Mocha" value="Mocha">
+              <label for="Mocha">Mocha</label>
+              <input type="radio" name="coffee" id="Other" value="Other">
+              <label for="Other">Other</label>
+          </p>
+          <p>
+              <label for="tick">Check whatever apply to you</label>
+              <br>
+              <input type="checkbox" name="tick" id="tick" value="u">
+              <label for="u">Food is important!</label>
+              <br>
+              <input type="checkbox" name="tick" id="tick" value="e">
+              <label for="e">Me &gt;&gt;&gt; Everyone Else</label>
+              <br>
+              <input type="checkbox" name="tick" id="tick" value="s">
+              <label for="s">use things as fuel</label>
+              <br>
+              <input type="checkbox" name="tick" id="tick" value="t">
+              <label for="t">Beach over mountains</label>
+          </p>     
+        <label for="msg">What do you feel about answering this form?</label>
+        <br><br>
+        <textarea name="msg" id="msg" cols="50" rows="10" placeholder="Ping your message here"></textarea>
+        <br>
+        <label for="avatar">Choose a profile picture:</label>
+        <input type="file" id="profile" name="profile" accept="image/png, image/jpeg">
+        <br>
+        <br>
+        <label for="input">Choose a intro video:</label>
+        <input type="file" id="input" name="input_video" accept="video/mp4, video/mov">
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="Reset">Reset</button>
+      </form>
+      <h1><center>Login Form</center></h1>
+    <form class="login" id="login">
+          <p>
+              <label for="username">User Name:</label>
+              <input type="text" name="username" id="username" required>
+          </p>
+          <p>
+              <label for="password">Password:</label> 
+              <input type="password" name="password" id="password" required> 
+          </p>
+    </form>
+</body>
+</html>
