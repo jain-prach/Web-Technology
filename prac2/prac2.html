@@ -78,11 +78,14 @@
         <textarea name="msg" id="msg" cols="50" rows="10" placeholder="Ping your message here"></textarea>
         <br>
         <label for="avatar">Choose a profile picture:</label>
-        <input type="file" id="profile" name="profile" accept="image/png, image/jpeg">
+        <input type="file" id="profile" name="profile" accept="image/*">
         <br>
         <br>
         <label for="input">Choose a intro video:</label>
-        <input type="file" id="input" name="input_video" accept="video/mp4, video/mov">
+        <input type="file" id="input" name="input_video" accept="video/*">
+        <br>
+        <label for="input">Do you like to sing?</label>
+        <input type="file" id="input" name="input_audio" accept="audio/*">
         <br>
         <br>
         <button type="submit">Submit</button>
